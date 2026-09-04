@@ -1,48 +1,39 @@
-# Wave The Ball — V8.4 Responsive Wave Scorer
+# Wave The Ball — V8.5.3 Responsive
 
-Version mobile-first et responsive de Wave The Ball.
+Version mobile-first verticale avec affichage desktop automatique.
 
-## Lancer le jeu
+## Nouveautés
 
-- Ouvrir `index.html` pour la version responsive automatique.
-- Ouvrir `mobile.html` pour forcer l’interface verticale mobile.
-- Ouvrir `desktop.html` pour forcer l’interface horizontale ordinateur.
+- Bras de dribble reconstruit à partir du même artwork ombré que le bras opposé.
+- Cycle de 12 poses : réception, poussée, relâchement, rebond et récupération.
+- Torse stable pour supprimer le tremblement du personnage.
+- Ballon libre après la poussée : la main ne suit plus la balle jusqu'au parquet.
+- Deux jauges redessinées dans une direction 64-bit inspirée des interfaces broadcast de basketball : chrome, verre, balayage lumineux, énergie animée et repères uniformes.
+- Pingouin basketteur haute définition conservé comme aiguille sur les deux jauges.
+- Toutes les mécaniques V8.5.2 sont conservées : mobile/desktop, dash avec onde de choc, Wave Mode, foule, dunk à distance en mode spécial et pingouin doré.
 
-Aucune installation, dépendance ou connexion Internet n’est nécessaire.
+## Lancer localement
 
-## Capacité spéciale — Wave Mode
+Ouvrir `index.html` dans un navigateur récent.
 
-Lorsque la jauge spéciale atteint 100 %, activer **WAVE** :
+## Déployer avec GitHub Pages
 
-- tous les tirs réussissent, quelle que soit la position de Solo ou le timing de l’aiguille ;
-- toute la jauge d’ajustement du tir devient verte ;
-- Solo peut dunker depuis n’importe quelle position du terrain ;
-- le mode reste actif pendant 6,5 secondes.
-
-## Son de l’arène
-
-- ambiance de public en continu pendant le match ;
-- montée de la foule après chaque panier ;
-- liesse plus forte sur un dunk ou un tir important ;
-- la touche `M` coupe ou réactive tout le son.
-
-Sur téléphone, le navigateur exige généralement une première interaction tactile avant d’autoriser le son. Touchez l’écran pour lancer la partie.
+1. Envoyer le contenu de ce dossier à la racine du dépôt.
+2. Aller dans `Settings > Pages`.
+3. Choisir `Deploy from a branch`.
+4. Sélectionner `main` et `/(root)`.
+5. Enregistrer puis attendre la fin du workflow dans `Actions`.
 
 ## Commandes ordinateur
 
 - Flèches : déplacement
-- `Espace` ou `J` : maintenir puis relâcher pour shooter
-- `S` : dribble
-- `D` : dash
-- `F` : dunk
-- `G` : Wave Mode
-- `P` ou `Échap` : pause
-- `H` : plein écran
-- `M` : son
+- Espace ou J : shoot
+- S : dribble
+- D : dash
+- F : dunk
+- G : Wave Mode
+- H : plein écran
+- M : son
+- P ou Échap : pause
 
-## Récompenses
-
-- panier normal : +1 Pingouin
-- tir lointain : +3 Pingouins
-- dribble réussi : +1 Pingouin
-- dunk : +3 Pingouins
+Sur mobile, utiliser le joystick et les boutons tactiles.
